@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: lifesawesomedemojavascript 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lifesawesomedemojavascript
+  template:
+    metadata:
+      labels:
+        app: lifesawesomedemojavascript 
+    spec:
+      containers:
+        - name: lifesawesomedemojavascript 
+          image: azeacrdemocontainerregistry.azurecr.io/lifesawesomedemojavascript
+          ports:
+          - containerPort: 8080
