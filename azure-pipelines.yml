@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '56f9bcb2-7172-4df5-8516-20abc51e7fca'
   imageRepository: 'lifesawesomedemojavascript'
   containerRegistry: 'azeacrdemocontainerregistry.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'app/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'azeacrdemocontainerregistry65ca-auth'
 
