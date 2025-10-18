@@ -6,6 +6,16 @@ The code includes a Dockerfile in `app/Dockerfile`, which includes the steps to 
 
 To use the secret resource, you'll need first create a service account and associated secret. See this [Developer Community post](https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123#T-N10138393) for more help. 
 
+## Running Tests
+
+To run the tests for this application:
+
+```bash
+cd app
+npm install
+npm test
+```
+
 # Contributing
 
 When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
